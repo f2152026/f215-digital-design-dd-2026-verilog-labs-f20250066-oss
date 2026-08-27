@@ -65,13 +65,12 @@ module cla4(
   and #(2) (t8,  p3, p2, g1);
   and #(2) (t9,  p3, p2, p1, g0);
   and #(2) (t10, p3, p2, p1, p0, cin);
-  or  #(2) (c4, g3, t7, t8, t9, t10);
+  or  #(2) (cout, g3, t7, t8, t9, t10);
  
   xor #(2) (sum[0], p0, cin);
   xor #(2) (sum[1], p1, c1);
   xor #(2) (sum[2], p2, c2);
   xor #(2) (sum[3], p3, c3);
 
-  assign cout = c4;
 
 endmodule
